@@ -1,0 +1,1 @@
+select class from (select distinct * from Courses) as DistinctCourses group by class having count(*) >= 5;

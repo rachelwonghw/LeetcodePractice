@@ -1,0 +1,1 @@
+select B.id from Weather A, Weather B where  TO_DAYS(A.recordDate) + 1 = TO_DAYS(B.recordDate) and B.Temperature > A.Temperature;
